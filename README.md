@@ -29,20 +29,18 @@ Based on:
 - API will featch some debit card data that will show data from debit card.
 - API response:-  
 {
-	"success": true,
-	"data": {
-		"cardDetails": {
-			"name": "Praveen Baskandi",
-			"cardNumber": "1234567890123456",
-			"date": "12/25",
-			"cvv": "354"
-
-		},
-		"spendData": {
-			"amount": 54
-
-		}
-	}
+  "success": true,
+  "data": {
+    "cardDetails": {
+      "name": "Praveen Baskandi",
+      "cardNumber": "1234567890123456",
+      "date": "12/25",
+      "cvv": "354"
+    },
+    "spendData": {
+      "amount": 54
+    }
+  }
 }
 - Screen card is scrollable.
 - Hide button will hide and unhide card number and card CVV.
