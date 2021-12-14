@@ -25,6 +25,7 @@ module.exports = {
       currency: 'S$',
       cvvHide: '***',
       numberHide: '****',
+      yourWeeklySpending: 'Your weekly spending limit is S$',
       thru: 'Thru:',
       hideCardNumber: 'Hide card number',
       showCardNumber: 'Show card number',

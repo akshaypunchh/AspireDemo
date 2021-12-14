@@ -24,7 +24,6 @@ const HomePage = () => {
   const {translations, cardLimit, cardDetails, isLoading} = useSelect();
   const navigation = useNavigation();
   const dispatch = useDispatch();
-  const amount = '3000';
 
   const goToLimitScreen = () => {
     navigation.navigate(NAVIGATION_KEY.SPEND_LIMIT_SCREEN);
@@ -47,7 +46,7 @@ const HomePage = () => {
           <S.BoxSymbol>
             <S.TextCurrency>{translations.currency}</S.TextCurrency>
           </S.BoxSymbol>
-          <S.TextAmount>{amount}</S.TextAmount>
+          <S.TextAmount>{cardDetails?.balance}</S.TextAmount>
         </S.BoxCurrency>
       </S.Container>
       <S.ScrollVertical>
@@ -57,7 +56,9 @@ const HomePage = () => {
         </S.CardBox>
         <S.EmptyBox />
         {/* progress view items*/}
-        {cardLimit ? <ProgressView total={cardLimit} spend={20} /> : null}
+        {cardLimit ? (
+          <ProgressView total={cardLimit} spend={cardDetails?.spend} />
+        ) : null}
         {/* option items*/}
         <Options
           heading={translations.page.head1}
@@ -66,7 +67,11 @@ const HomePage = () => {
         />
         <Options
           heading={translations.page.head2}
-          subHeading={translations.page.subHead2}
+          subHeading={
+            cardLimit
+              ? `${translations.yourWeeklySpending} ${cardLimit}`
+              : translations.page.subHead2
+          }
           img={imgCat2}
           button
           onPress={goToLimitScreen}
