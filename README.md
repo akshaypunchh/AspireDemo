@@ -37,7 +37,9 @@ Based on:
       "name": "Praveen Baskandi",
       "cardNumber": "1234567890123456",
       "date": "12/25",
-      "cvv": "354"
+      "cvv": "354",
+      "balance": "4000",
+      "spend": 200
     },
     "spendData": {
       "amount": 54
