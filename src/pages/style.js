@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 import {statusbarHeight} from '../utils/dimension';
-import {TextBold, TextMed, TextReg} from '../UI/Text';
+import {TextBold, TextMed, TextReg} from '../components/Text';
 import {Colors} from '../utils/Colors';
 
 export const HeadContainer = styled.View`

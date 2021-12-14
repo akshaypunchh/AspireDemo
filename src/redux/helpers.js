@@ -1,4 +1,4 @@
-import {toastError} from '../UI/Toast';
+import {toastError} from '../components/Toast';
 
 export const extractError = error => {
   return error.message;

@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 import {statusbarHeight} from '../../utils/dimension';
 import {isAndroid} from '../../utils/common';
-import {TextMed, TextReg, TextDemiBold} from '../../UI/Text';
+import {TextMed, TextReg, TextDemiBold} from '../../components/Text';
 import {Colors} from '../../utils/Colors';
 
 export const HeadContainer = styled.View`

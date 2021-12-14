@@ -6,8 +6,8 @@ import {useNavigation} from '@react-navigation/native';
 import {updateDebitCardLimitLocal} from '../../redux/debit-card/action';
 import {SPEND_LIMIT_AMOUNT} from '../../constants/spend-limit';
 import imgMeter from '../../assets/spend_limit/img_meter.png';
-import Button from '../../UI/Button';
-import HeadingBar from '../../UI/Heading';
+import Button from '../../components/Button';
+import HeadingBar from '../../components/Heading';
 import {Colors} from '../../utils/Colors';
 import useSelect from '../selector';
 import {TextHeading, BoxSymbol, TextCurrency} from '../style';
@@ -57,7 +57,9 @@ const SpendLimit = () => {
         {/* limit 3 buttons*/}
         <S.RowWrapper>
           {SPEND_LIMIT_AMOUNT.map(items => (
-            <S.PriceBack onPress={() => setAmount(items.value)}>
+            <S.PriceBack
+              onPress={() => setAmount(items.value)}
+              key={items.label}>
               <S.PriceText>{items.label}</S.PriceText>
             </S.PriceBack>
           ))}

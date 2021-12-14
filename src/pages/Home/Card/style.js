@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 
-import {TextBold, TextDemiBold} from '../../../UI/Text';
+import {TextBold, TextDemiBold} from '../../../components/Text';
 import {Colors} from '../../../utils/Colors';
 
 export const TopContainer = styled.View`
