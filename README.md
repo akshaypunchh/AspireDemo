@@ -2,7 +2,7 @@
 
 Based on:
 
-<img src="screen_shot/app_gif.gif" width="170" height="300"/>
+<img src="screen_shot/app_gif.gif" width="170" height="320"/>
 
 - [React 17](https://reactjs.org)
 - [React Native 0.65](https://reactnative.dev)
