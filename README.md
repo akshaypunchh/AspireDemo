@@ -64,5 +64,6 @@ Based on:
 <img src="screen_shot/Screen_Shot_2.png" width="150" height="300"/>
 
 
+### Gif for the app
 <img src="screen_shot/app_gif.gif" width="150" height="300"/>
 
