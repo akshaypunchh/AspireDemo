@@ -2,6 +2,8 @@
 
 Based on:
 
+<img src="screen_shot/app_gif.gif" width="170" height="300"/>
+
 - [React 17](https://reactjs.org)
 - [React Native 0.65](https://reactnative.dev)
 - [Redux](https://redux.js.org)
@@ -62,8 +64,4 @@ Based on:
 - Back button will back screen without any changes.
 
 <img src="screen_shot/Screen_Shot_2.png" width="150" height="300"/>
-
-
-### Gif for the app
-<img src="screen_shot/app_gif.gif" width="150" height="300"/>
 
